@@ -16,7 +16,9 @@
 
 1. `git init`
 2. `git add` file_name
-3. `git commit -m` 'Commit description' `-m` 'Next string description'
-4. `git remote add origin` 'repository_name'
-5. `git remote -v` # check connected remote repository
-6. `git push -u origin master` # push master branch to remote server
+3. `git config user.name` 'Oleg Cybulsky'
+4. `git config user.email` 'alogic-ru@yandex.com'
+5. `git commit -m` 'Commit description' `-m` 'Next string description'
+6. `git remote add origin` 'repository_name'
+7. `git remote -v` # check connected remote repository
+8. `git push -u origin master` # push master branch to remote server
