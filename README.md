@@ -25,6 +25,7 @@
 9. `git status` # show staged and modified files
 10. `git restore --staged <file>` # unstage file, modifications peserved
 11. `git restore <file>` # undo changes in modified file
+12. `git reset --hard <commit hash>` # move HEAD to commit, remove commits above
 
 ```mermaid
 graph LR;
