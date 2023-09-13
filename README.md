@@ -23,6 +23,8 @@
 7. `git remote -v` # check connected remote repository
 8. `git push -u origin master` # push master branch to remote server
 9. `git status` # show staged and modified files
+10. `git restore --staged <file>` # unstage file, modifications peserved
+11. `git restore <file>` # undo changes in modified file
 
 ```mermaid
 graph LR;
