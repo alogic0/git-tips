@@ -22,3 +22,15 @@
 6. `git remote add origin` 'repository_name'
 7. `git remote -v` # check connected remote repository
 8. `git push -u origin master` # push master branch to remote server
+9. `git status` # show staged and modified files
+
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "???"     --> tracked/comitted;
+
+%% example arrow without text: 
+  A --> B;
+```
+
+
