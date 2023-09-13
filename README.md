@@ -26,6 +26,8 @@
 10. `git restore --staged <file>` # unstage file, modifications peserved
 11. `git restore <file>` # undo changes in modified file
 12. `git reset --hard <commit hash>` # move HEAD to commit, remove commits above
+13. `git diff` # checks commited version against modified
+14. `git diff --staged` # checks commited against staged
 
 ```mermaid
 graph LR;
