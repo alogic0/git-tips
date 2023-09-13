@@ -28,6 +28,7 @@
 12. `git reset --hard <commit hash>` # move HEAD to commit, remove commits above
 13. `git diff` # checks commited version against modified
 14. `git diff --staged` # checks commited against staged
+15. `git diff <commit1> <commit2>` # show changes between commits
 
 ```mermaid
 graph LR;
