@@ -30,6 +30,17 @@
 14. `git diff --staged` # checks commited against staged
 15. `git diff <commit1> <commit2>` # show changes between commits
 
+### Branches
+
+To get remote branches localy:  
+```bash
+git branch -r | grep -v '\->' | sed "s,\x1B\[[0-9;]*[a-zA-Z],,g" | while read remote; do git checkout "${remote#origin/}"; done
+```
+or just:  
+```bash
+git branch -r | grep -v '\->' | while read remote; do git checkout "${remote#origin/}"; done
+```
+
 ```mermaid
 graph LR;
   untracked -- "git add" --> staged;
