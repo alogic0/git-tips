@@ -30,6 +30,27 @@
 14. `git diff --staged` # checks commited against staged
 15. `git diff <commit1> <commit2>` # show changes between commits
 
+### .gitignore rules
+```
+# ignore all .a files
+*.a
+
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+
+# only ignore the TODO file in the current directory, not subdir/TODO
+/TODO
+
+# ignore all files in any directory named build
+build/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+# ignore all .pdf files in the doc/ directory and any of its subdirectories
+doc/**/*.pdf
+```
+
 ### Branches
 
 To get remote branches localy:  
@@ -40,6 +61,10 @@ or just:
 ```bash
 git branch -r | grep -v '\->' | while read remote; do git checkout "${remote#origin/}"; done
 ```
+
+To keep password for remote in memory for a few minutes:  
+`git config --global credential.helper cache`
+
 
 ```mermaid
 graph LR;
